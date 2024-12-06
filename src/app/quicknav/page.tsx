@@ -4,8 +4,11 @@ import GeneralApp from "@/pages/generalapp/generalApp";
 export default function Home() {
     return (
         <GeneralApp
-            authors={[{ url: "https://frozenassassine.de", displayName: "Julius Kirsch" },
-                {url: "https://finnfreitag.com?ref=julius", displayName: "Finn Freitag"}
+            tools_languages={["C#", "XAML", "WinUI3"]}
+            tools_ides={["Visual Studio 2022"]}
+            authors={[
+                { url: "https://frozenassassine.de", displayName: "Julius Kirsch" },
+                { url: "https://finnfreitag.com?ref=julius", displayName: "Finn Freitag" },
             ]}
             appName="QuickNav"
             copyrightNotice="Copyright © 2024"
@@ -18,18 +21,21 @@ export default function Home() {
                 { icon: "mdi:github", text: "Github", url: "https://www.github.com/FrozenAssassine/quicknav" },
             ]}
             featureItems={[
-                { head: 'Live Advanced Calculator', content: 'Perform calculations with advanced functions like sin, cos, tan, e, and pi.' },
-                { head: 'File Search', content: 'Quickly search for files on your system.' },
-                { head: 'Commandline Executor', content: 'Execute commands directly from QuickNav.' },
-                { head: 'File Info', content: 'Get information about files on your system.' },
-                { head: 'Start Apps', content: 'Launch applications with ease.' },
-                { head: 'System Information', content: 'View information about your system.' },
-                { head: 'Lock Screen', content: 'Lock your screen instantly.' },
-                { head: 'Web Search', content: 'Search the web directly from QuickNav.' },
-                { head: 'Clipboard to Plain Text', content: 'Convert clipboard contents to plain text.' },
-                { head: 'Timer', content: 'Set timers for various tasks.' },
-                { head: 'Word Counter', content: 'Count words in a text snippet.' },
-                { head: 'Color Chooser', content: 'Select colors for your projects.' }            
+                {
+                    head: "Live Advanced Calculator",
+                    content: "Perform calculations with advanced functions like sin, cos, tan, e, and pi.",
+                },
+                { head: "File Search", content: "Quickly search for files on your system." },
+                { head: "Commandline Executor", content: "Execute commands directly from QuickNav." },
+                { head: "File Info", content: "Get information about files on your system." },
+                { head: "Start Apps", content: "Launch applications with ease." },
+                { head: "System Information", content: "View information about your system." },
+                { head: "Lock Screen", content: "Lock your screen instantly." },
+                { head: "Web Search", content: "Search the web directly from QuickNav." },
+                { head: "Clipboard to Plain Text", content: "Convert clipboard contents to plain text." },
+                { head: "Timer", content: "Set timers for various tasks." },
+                { head: "Word Counter", content: "Count words in a text snippet." },
+                { head: "Color Chooser", content: "Select colors for your projects." },
             ]}
             galleryImages={[
                 "/assets/quicknav/image1.png",

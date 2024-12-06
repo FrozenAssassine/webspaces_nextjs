@@ -1,11 +1,14 @@
-"use client"
+"use client";
 import GeneralApp from "@/pages/generalapp/generalApp";
 
 export default function Home() {
     return (
         <GeneralApp
-            authors={[{ url: "https://frozenassassine.de", displayName: "Julius Kirsch" }, 
-                {url: "https://finnfreitag.com?ref=julius", displayName: "Finn Freitag"}
+            tools_languages={["C#", "XAML", "WinUI3"]}
+            tools_ides={["Visual Studio 2022"]}
+            authors={[
+                { url: "https://frozenassassine.de", displayName: "Julius Kirsch" },
+                { url: "https://finnfreitag.com?ref=julius", displayName: "Finn Freitag" },
             ]}
             appName="Ease Pass"
             copyrightNotice="Copyright © 2023-2024"

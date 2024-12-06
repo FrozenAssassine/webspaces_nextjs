@@ -14,7 +14,7 @@ export function middleware(requests: NextRequest) {
 
     //TESTING and PROGRAMMING PURPOSE!! default rewrite for localhost or unknown hostnames
     if (hostname === "localhost:3000") {
-        url.pathname = `/ultimaterunner${url.pathname}`;
+        url.pathname = `/fastedit${url.pathname}`;
         return NextResponse.rewrite(url);
     }
 

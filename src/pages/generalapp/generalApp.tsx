@@ -2,6 +2,7 @@ import AboutPage from "@/components/generalapp/AboutPage/AboutPage";
 import FeaturesPage from "@/components/generalapp/FeaturesPage/FeaturesPage";
 import GalleryPage from "@/components/generalapp/GalleryPage/GalleryPage";
 import HomePage from "@/components/generalapp/HomePage/HomePage";
+import ToolsUsedPage from "@/components/generalapp/ToolsUsedPage/ToolsUsedPage";
 import React from "react";
 
 type Props = {
@@ -17,6 +18,8 @@ type Props = {
     copyrightNotice: string;
     authors: { url: string; displayName: string }[];
     iconRadius?: number;
+    tools_languages: string[];
+    tools_ides: string[];
 };
 
 export default function GeneralApp(props: Props) {
@@ -32,6 +35,7 @@ export default function GeneralApp(props: Props) {
             />
             <FeaturesPage featureItems={props.featureItems} />
             <GalleryPage images={props.galleryImages} />
+            <ToolsUsedPage tools_ides={props.tools_ides} tools_languages={props.tools_languages} />
             <AboutPage
                 appName={props.appName}
                 iconImage={props.iconImage}

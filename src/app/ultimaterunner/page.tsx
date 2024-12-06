@@ -4,6 +4,8 @@ import GeneralApp from "@/pages/generalapp/generalApp";
 export default function Home() {
     return (
         <GeneralApp
+            tools_ides={["Unity", "Visual Studio 2022", "Inkscape"]}
+            tools_languages={["C#", "Unity IAP", "Unity ADS", "Google Play Games"]}
             authors={[
                 { url: "https://frozenassassine.de?ref=web_ultimaterunner", displayName: "Julius Kirsch" },
                 { url: "https://github.com/Nathans-SushiCat", displayName: "SushiCat" },

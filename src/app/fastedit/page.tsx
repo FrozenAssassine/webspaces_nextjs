@@ -4,6 +4,8 @@ import GeneralApp from "@/pages/generalapp/generalApp";
 export default function Home() {
     return (
         <GeneralApp
+            tools_languages={["C#", "XAML", "UWP"]}
+            tools_ides={["Visual Studio 2022"]}
             authors={[{ url: "https://frozenassassine.de", displayName: "Julius Kirsch" }]}
             appName="Fastedit"
             copyrightNotice="Copyright © 2023-2024"
