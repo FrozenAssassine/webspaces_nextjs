@@ -1,0 +1,47 @@
+.otherinterestspage{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.interestBox{
+
+}
+
+.dronevideolist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1em;
+    width: 100%;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.dronevideo{
+    width: 40%;
+    margin: .5em;
+    cursor: pointer;
+    @media (max-width: 800px) {
+        width: 70%;
+    }
+}
+
+.dronevideoimage{
+    transition-duration: .3s;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    &:hover{
+        box-shadow: 0 0 10px white;
+    }
+}
+
+.droneVideoHeadline{
+    font-size: 1.8em;
+    margin-top: 2em;
+}
